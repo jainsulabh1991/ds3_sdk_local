@@ -20,7 +20,7 @@ import com.spectralogic.ds3client.metadata.interfaces.MetadataStore;
 import com.spectralogic.ds3client.metadata.interfaces.MetadataStoreListener;
 
 
-public class MetaDataStoreFactory
+public class MetadataStoreFactory
 {
     public MetadataStore getOsSpecificMetadataStore(final String osName, final ImmutableMap.Builder<String, String> metadataMap,final MetadataStoreListener metadataStoreListener)
     {

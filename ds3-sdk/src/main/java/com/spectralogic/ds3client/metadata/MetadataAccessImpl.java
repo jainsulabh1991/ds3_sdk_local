@@ -70,7 +70,7 @@ public class MetadataAccessImpl implements Ds3ClientHelpers.MetadataAccess {
             final String localOSName = MetaDataUtil.getOS();
             final Set<String> setFileAttributes = MetaDataUtil.getSupportedFileAttributes(file);
             //get metadata store based on os type
-            final MetadataStore metadataStore = new MetaDataStoreFactory().getOsSpecificMetadataStore(localOSName, metadata,metadataStoreListener);
+            final MetadataStore metadataStore = new MetadataStoreFactory().getOsSpecificMetadataStore(localOSName, metadata,metadataStoreListener);
             metadataStore.saveOSMetaData(localOSName);
 
             final BasicFileAttributes attr = Files.readAttributes(file, BasicFileAttributes.class);

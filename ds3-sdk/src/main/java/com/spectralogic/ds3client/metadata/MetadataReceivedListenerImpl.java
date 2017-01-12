@@ -45,7 +45,7 @@ public class MetadataReceivedListenerImpl implements MetadataReceivedListener {
     private void restoreMetaData(final String objectName, final Metadata metadata) {
         final String osName = System.getProperty("os.name");
         //get metadatarestore on the basis of os
-        final MetadataRestore metadataRestore = new MetaDataRestoreFactory().getOSSpecificMetadataRestore(metadata, objectName, osName, metadataRestoreListener);
+        final MetadataRestore metadataRestore = new MetadataRestoreFactory().getOSSpecificMetadataRestore(metadata, objectName, osName, metadataRestoreListener);
         //restore os name
         metadataRestore.restoreOSName();
         //restore user and owner based on OS
